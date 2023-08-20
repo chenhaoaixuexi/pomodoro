@@ -52,8 +52,14 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     // Half Screen Dimensions
-    final double height = MediaQuery.of(context).size.height / 2;
-    final double width = MediaQuery.of(context).size.width / 2;
+    final double height = MediaQuery
+        .of(context)
+        .size
+        .height / 2;
+    final double width = MediaQuery
+        .of(context)
+        .size
+        .width / 2;
     int indexTimesCompleted = 0;
 
     CountDownTimer _countDownTimer = CountDownTimer(
@@ -75,7 +81,7 @@ class _HomePageState extends State<HomePage> {
               ElevatedButton(
                   style: ButtonStyle(
                     backgroundColor: MaterialStateColor.resolveWith(
-                        (states) => Colors.green),
+                            (states) => Colors.green),
                   ),
                   child: Text("Start a short break"),
                   onPressed: () {}),
@@ -102,7 +108,7 @@ class _HomePageState extends State<HomePage> {
     );
 
     return Scaffold(
-      appBar: AppBar(
+        appBar: AppBar(
         elevation: 0.0,
         leading: IconButton(
           onPressed: () {},
